@@ -1,3 +1,85 @@
 *{
-    
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: gray;
+}
+.wrapper{
+    max-width: 1080px;
+    height: 1900px;
+    background-color: #fff;
+    color: #000;
+    margin: 20px auto;
+}
+h1{
+    padding: 40px 0px 10px 30px;
+}
+.wrapper--conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteiner{
+    width: 70%;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    font-size: 24px;
+    line-height: 1.5;
+}
+.input{
+    width: 0;
+    height: 0;
+    appearance: none;
+    position: absolute;
+}
+.title--mema{
+    display: block;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+}
+.title--mema:after{
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.title--mema:hover{
+    color:blue;
+}
+.title--mema:hover~.memo{
+    display: block;
+    opacity: 1;
+    transition: 2s;
+}
+.memo img{
+    width: 300px;
+}
+.memo{
+    display: none;
+    width: 300px;
+    margin-left: 30%;
+    opacity: 0;
+}
+.input:checked~.memo{
+    display: block;
+    opacity: 1;
+    transition: 2s;
+}
+.input:checked~.title--mema{
+    color: blue;
+}
+.input:checked~.title--mema:after{
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent blue  transparent;
 }
