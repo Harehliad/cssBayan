@@ -4,24 +4,26 @@
         height: 1180px;
         background-color: #fff;
         color: #000;
-        margin: 10px auto;
+        margin: 1% auto;
     }
     h1{
-        padding: 30px 0px 10px 20px;
+        padding: 4% 0px 1% 3%;
     }
     .conteiner{
         width: 70%;
         margin-bottom: 5px;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.5;
     }
     .memo{
         display: none;
-        width: 300px;
-        margin-left: 20%;
+        width: 100%;
+        text-align: center;
         opacity: 0;
     }
-
+    .memo img{
+        width: 80%;
+    }
 }
 @media (max-width: 320px) {
     .wrapper{
@@ -29,25 +31,26 @@
         height: 568px;
         background-color: #fff;
         color: #000;
-        margin: 2px auto;
+        margin: 2% auto;
     }
     h1{
-        font-size: 24px;
-        padding: 10px 0px 10px 10px;
+        font-size: 16px;
+        padding: 4% 0px 1% 3%;
     }
     .memo{
         display: none;
-        width: 150px;
+        width: 100%;
         opacity: 0;
+        text-align: center;
     }
     .conteiner{
         width: 70%;
-        margin-bottom: 5px;
+        margin-bottom: 1%;
         font-size: 14px;
         line-height: 1.5;
     }
     .memo img{
-        width: 100%;
+        width: 80%;
     }
     .memo{
         display: none;
