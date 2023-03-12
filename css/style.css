@@ -8,7 +8,6 @@ body{
 }
 .wrapper{
     max-width: 1080px;
-    height: 1900px;
     background-color: #fff;
     color: #000;
     margin: 2% auto;
@@ -67,7 +66,6 @@ h1{
 .memo{
     display: none;
     width: 100%;
-    opacity: 0;
     text-align: center;
 }
 .input:checked~.memo{
