@@ -12,6 +12,9 @@ body{
     color: #000;
     margin: 2% auto;
 }
+.wrapper h1{
+    text-align: center;
+}
 h1{
     padding: 4% 0px 1% 3%;
 }
